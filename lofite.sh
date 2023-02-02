@@ -96,7 +96,7 @@ delete_everything () {
     rm -rf ~/.lotus
     rm -rf ~/.lotusminer
     rm -rf ~/.genesis-sectors
-    rm -rf ~/lotus
+    rm -rf ./lotus
     rm -rf /usr/local/bin/lotus
     rm -rf /usr/local/bin/lotus-miner
     rm -rf /usr/local/bin/lotus-worker
@@ -105,7 +105,7 @@ delete_everything () {
 }
 
 show_help () {
-    echo "Setup a local Filecoin testnet."
+    echo "Lofite: setup a local Filecoin testnet."
     echo "A collection of functions to create and maintain a local Filecoin testnet."
     echo " "
     echo "USAGE:"
