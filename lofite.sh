@@ -4,7 +4,7 @@ if [ "$#" -ne 1 ]
 then
     echo "=============================================================="
     echo "ERROR: You need to supply a function when calling this script:"
-    echo "Run ./setup-local-filecoin-testnet.sh show_help to get help."
+    echo "Run './lofite show_help' to get help."
     echo "=============================================================="
     exit 1
 fi
@@ -15,8 +15,7 @@ create_daemon () {
     echo "Creating daemon..."
 
     # Set environment variables for this terminal window.
-    export LOTUS_PATH=~/.lotus
-    export LOTUS_MINER_PATH=~/.lotusminer
+    export LOTUS_PATH=~/.lotus export LOTUS_MINER_PATH=~/.lotusminer
     export LOTUS_SKIP_GENESIS_CHECK=_yes_
     export CGO_CFLAGS_ALLOW="-D__BLST_PORTABLE__"
     export CGO_CFLAGS="-D__BLST_PORTABLE__"
@@ -110,17 +109,17 @@ show_help () {
     echo "A collection of functions to create and maintain a local Filecoin testnet."
     echo " "
     echo "USAGE:"
-    echo "./setup-local-filecoin-testnet.sh <FUNCTION>"
+    echo "./lofite.sh <FUNCTION>"
     echo " "
     echo "FUNCTIONS:"
-    echo "createDaemon - creates the Filecoin daemon."
-    echo "createMiner - creates the Filecoin miner."
-    echo "startDaemon - starts the daemon. createDaemon must be ran before this."
-    echo "startMiner - starts the miner. createMiner must be ran before this."
-    echo "deleteEverything: deletes everything Lotus related. Requires root."
+    echo "create_daemon - creates the Filecoin daemon."
+    echo "create_miner - creates the Filecoin miner."
+    echo "start_daemon - starts the daemon. createDaemon must be ran before this."
+    echo "start_miner - starts the miner. createMiner must be ran before this."
+    echo "delete_everything: deletes everything Lotus related. Requires root."
     echo " "
     echo "EXAMPLE:"
-    echo "./setup-local-filecoin-testnet.sh createDaemon"
+    echo "./lofite.sh create_daemon"
     echo " "
 }
 

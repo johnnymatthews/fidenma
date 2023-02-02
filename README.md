@@ -1,4 +1,6 @@
-# Manage a local Filecoin testnet
+# Lofite
+
+**Lo**cal **Fi**lecoin **te**stnet manager. A collection of scripts to create, start, and manage a local Filecoin testnet.
 
 ## WARNING
 
@@ -6,12 +8,10 @@
 
 ---
 
-A collection of scripts to create, start, and manage a local Filecoin testnet.
-
 ## Usage
 
 ```shell
-./setup-local-filecoin-testnet.sh <FUNCTION>
+./lofite.sh <FUNCTION>
 ```
 
 ## Functions
@@ -27,5 +27,5 @@ A collection of scripts to create, start, and manage a local Filecoin testnet.
 ## Example
 
 ```shell
-./setup-local-filecoin-testnet.sh create_daemon
+./lofite.sh create_daemon
 ```
