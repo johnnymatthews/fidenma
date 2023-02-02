@@ -36,6 +36,12 @@ As per the warning at the top of this readme, this repository is still in the ve
 
 Currently, the scripts in this repository have only been tested against Ubuntu 22.04. Other Debian-like systems are also likely supported, however we can't guarentee anything. MacOS is not yet supported.
 
+## Prerequisites
+
+- [Go 1.18.0 or higher](https://go.dev/).
+- [Rust 1.67.0 or higher](https://www.rust-lang.org/).
+- [Git](https://git-scm.com/)
+
 ## Install
 
 1. Clone this repo:
